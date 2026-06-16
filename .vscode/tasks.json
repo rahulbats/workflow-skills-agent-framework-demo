@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open Agent Inspector",
+            "type": "shell",
+            "command": "${command:ai-mlstudio.openTestTool}",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+# Microsoft Agent Framework + Azure OpenAI
+agent-framework>=0.2.0
+agent-framework-openai>=0.2.0
+
+# Azure SDKs for the data sources used by the demos
+azure-identity>=1.17.0
+azure-cosmos>=4.7.0
+azure-storage-blob>=12.22.0
+azure-eventgrid>=4.20.0
+
+# Misc
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+
+# Debugging support (Foundry Toolkit Agent Inspector + agentdev CLI)
+debugpy>=1.8.0
+agent-dev-cli>=0.0.1b260427

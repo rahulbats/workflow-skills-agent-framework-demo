@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Demo 1 — Orchestrator Workflow",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "demo1_orchestrator_workflow.main",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": false,
+            "args": [
+                "CLM-1001"
+            ]
+        },
+        {
+            "name": "Demo 2 — Single Agent with Tools",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "demo2_single_agent_tools.main",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": false,
+            "args": [
+                "CLM-1001"
+            ]
+        },
+        {
+            "name": "Seed Cosmos + Blob",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "shared.seed_data",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": false
+        },
+        {
+            "name": "Foundry Toolkit — Inspect Demo 1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/Scripts/agentdev",
+            "args": [
+                "run",
+                "demo1_orchestrator_workflow/main.py",
+                "--port",
+                "8087"
+            ],
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "preLaunchTask": "Open Agent Inspector"
+        }
+    ]
+}
