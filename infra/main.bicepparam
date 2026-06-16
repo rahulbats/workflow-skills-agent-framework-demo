@@ -2,7 +2,7 @@ using 'main.bicep'
 
 // Edit these for your environment, or override on the CLI with --parameters key=value
 param location = 'eastus2'
-param resourceGroupName = 'rg-sedwick-sidekick'
+param resourceGroupName = 'rg-workflow-skills-agent-framework-demo-sidekick'
 
 // REQUIRED: object id of the user/SP running the demos.
 // Get with: az ad signed-in-user show --query id -o tsv

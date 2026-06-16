@@ -1,4 +1,4 @@
-# Sedgwick Sidekick — Insurance Claims Agent Framework Demos
+# Insurance Claims Agent Framework Demos
 
 Two side-by-side demos of [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview/agent-framework-overview)
 patterns for an **insurance-claims adjudication** scenario, backed by real
@@ -75,7 +75,7 @@ az account set --subscription "<your-subscription>"
 
 # 4. Provision the resource group + Cosmos + Blob + AOAI in one shot.
 #    This also writes a ready-to-use .env at the repo root.
-./infra/deploy.ps1 -Location eastus2 -ResourceGroupName rg-sedwick-sidekick
+./infra/deploy.ps1 -Location eastus2 -ResourceGroupName rg-workflow-skills-agent-framework-demo
 
 # 5. Seed Cosmos + Blob with the sample claim and policy doc
 python -m shared.seed_data
@@ -104,7 +104,7 @@ and pick **Demo 1 — Orchestrator Workflow** or **Demo 2 — Single Agent with 
 ## Project layout
 
 ```
-sedwick-sidekick/
+workflow-skills-agent-framework-demo/
 ├── shared/
 │   ├── config.py          # .env loading + Azure OpenAI chat-client factory
 │   ├── data_clients.py    # Cosmos + Blob wrappers (DefaultAzureCredential)

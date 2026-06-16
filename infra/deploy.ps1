@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-    Deploy the sedwick-sidekick demo infrastructure (new RG + Cosmos + Blob + AOAI)
+    Deploy the workflow-skills-agent-framework-demo demo infrastructure (new RG + Cosmos + Blob + AOAI)
     and write a ready-to-use .env file at the repo root.
 
 .EXAMPLE
-    ./infra/deploy.ps1 -Location eastus2 -ResourceGroupName rg-sedwick-sidekick
+    ./infra/deploy.ps1 -Location eastus2 -ResourceGroupName rg-workflow-skills-agent-framework-demo
 
 .NOTES
     Requires the Azure CLI (`az`) and that you've already run `az login`.
@@ -12,8 +12,8 @@
 [CmdletBinding()]
 param(
     [string] $Location = 'eastus2',
-    [string] $ResourceGroupName = 'rg-sedwick-sidekick',
-    [string] $DeploymentName = "sedwick-sidekick-$(Get-Date -Format yyyyMMddHHmmss)"
+    [string] $ResourceGroupName = 'rg-workflow-skills-agent-framework-demo',
+    [string] $DeploymentName = "workflow-skills-agent-framework-demo-$(Get-Date -Format yyyyMMddHHmmss)"
 )
 
 $ErrorActionPreference = 'Stop'

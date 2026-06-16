@@ -9,7 +9,7 @@ targetScope = 'subscription'
 param location string = 'eastus2'
 
 @description('Name of the new resource group to create.')
-param resourceGroupName string = 'rg-sedwick-sidekick'
+param resourceGroupName string = 'rg-workflow-skills-agent-framework-demo'
 
 @description('Short suffix appended to globally-unique resource names. Leave default for a stable name, or override per environment.')
 param nameSuffix string = uniqueString(subscription().id, resourceGroupName)
@@ -43,7 +43,7 @@ resource rg 'Microsoft.Resources/resourceGroups@2024-03-01' = {
 }
 
 module resources 'resources.bicep' = {
-  name: 'sedwick-sidekick-resources'
+  name: 'workflow-skills-agent-framework-demo-resources'
   scope: rg
   params: {
     location: location
